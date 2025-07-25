@@ -8,6 +8,7 @@ return {
         configs = function()
             require 'nvim-treesitter.install'.compilers = { "zig" }
 
+            ---@diagnostic disable-next-line: missing-fields
             require("nvim-treesitter.configs").setup({
                 -- A list of parser names, or "all"
                 ensure_installed = { "c", "lua", "vim", "vimdoc", "zig" },

@@ -64,11 +64,13 @@
 
 --      <leader>VWS          -> vim.lsp.buf.workspace_symbol -                 ?
 
---      <leader>vd           -> vim.diagnostic.open_float -                 shows error message on a floating window
+--      [d                   ->                          - go to next error on the file
 
---      [d                   -> vim.diagnostic.goto_next - go to next error on the file
+--      d]                   ->                          - go to previous error on the file
 
---      d]                   -> vim.diagnostic.goto_prev - go to previous error on the file
+--      <leader>vd           -> vim.diagnostic.open_float - Floating Diagnostics at cursor position
+
+--      <C-w>d               ->                          - Floating Diagnostics at cursor position
 
 --      <leader>vca          -> vim.lsp.buf.code_action -              ?
 
