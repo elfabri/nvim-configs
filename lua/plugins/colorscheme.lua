@@ -19,9 +19,18 @@ return {
         lazy = false,
         name = 'tokyonight',
         priority = 1000,
-        config = function()
+        opts = {
+            style = "storm",
+            transparent = true,
+            styles = {
+                sidebars = "transparent",
+                floats = "transparent",
+            },
+        },
+        config = function(_, opts)
             -- load the colorscheme here
-            vim.cmd([[colorscheme tokyonight-night]])
+            require("tokyonight").setup(opts)
+            vim.cmd.colorscheme("tokyonight")
         end,
     },
 
